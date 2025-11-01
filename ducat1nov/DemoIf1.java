@@ -1,65 +1,65 @@
 
 
-// // public class DemoIf1 {
-// // public static void main(String args []){
+ public class DemoIf1 {
+public static void main(String args []){
 
-// //         for (int i =1; i<=5; i++) {
+        for (int i =1; i<=5; i++) {
 
-// //                 for (int j=1; j<=5;j++){
+                for (int j=1; j<=5;j++){
 
-// //                         System.out.print("* ");
-// //                 }
-// //                 System.out.println();
-// //         }
-// // }
+                        System.out.print("* ");
+                }
+                System.out.println();
+        }
+}
     
-// // }
-// //pattern 1
-// //  2
-// public class DemoIf1 {
+}
+//pattern 1
+//  2
+public class DemoIf1 {
 	
-// 		public static void main (String args [])	{
+		public static void main (String args [])	{
 
-// 				for (int i =1;i <=5;i++)	{
+				for (int i =1;i <=5;i++)	{
 			
-// 					for (int j =1;j <= i; j++) 	{
+					for (int j =1;j <= i; j++) 	{
 			
-// 					System.out.print(i +" ");
-// 			}
-// 			System.out.println();
-// 		}
-// 	}
-// }
+					System.out.print(i +" ");
+			}
+			System.out.println();
+		}
+	}
+}
 //pattern 2
-// public class DemoIf1 {
+public class DemoIf1 {
 
-// 		public static void main (String args [])	{
+		public static void main (String args [])	{
 	
-// 			for (int i =1;i <= 5;i++)	{
+			for (int i =1;i <= 5;i++)	{
 		
-// 			for(int j = 1; j <= 5;j++)	{
+			for(int j = 1; j <= 5;j++)	{
 
-// 				System.out.print(j +" ");
-// 			}
-// 			System.out.println();
-// 		}
-// 	}
-//  }
+				System.out.print(j +" ");
+			}
+			System.out.println();
+		}
+	}
+ }
 
 //pattern 3
-// public class DemoIf1 {
+public class DemoIf1 {
 
-//         public static void main(String[] args) {
-//             for (int i =0;i<=5;i++) {
+        public static void main(String[] args) {
+            for (int i =0;i<=5;i++) {
 
-//                 for (int j = 1; j <= i; j++) {
+                for (int j = 1; j <= i; j++) {
 
-//                     System.out.print(j + " ");
-//                 }
-//                 System.out.println();
-//             }
-//         }
-// }
+                    System.out.print(j + " ");
+                }
+                System.out.println();
+            }
+        }
+}
 
 /*
  A 
@@ -68,22 +68,24 @@ C C C
 D D D D
 E E E E E
  */
-// public class DemoIf1 {
+//pattern 4
+public class DemoIf1 {
 
-//         public static void main (String args [])    {
+        public static void main (String args [])    {
 
-//                 for (int i =65; i <=69; i++){
+                for (int i =65; i <=69; i++){
 
-//                     for (int j =65; j <=i; j++){
+                    for (int j =65; j <=i; j++){
 
-//                         System.out.print((char)i +" ");
+                        System.out.print((char)i +" ");
 
-//                     }
-//                     System.out.println();
-//                 }
-//         }
-// }
+                    }
+                    System.out.println();
+                }
+        }
+}
 
+//pattern 5
 public class DemoIf1
 {
     public static void main (String args []){
@@ -96,5 +98,49 @@ public class DemoIf1
                 }
                 System.out.println();
             }
+    }
+}
+
+//pattern 6
+public class DemoIf1 {
+
+        public static void main (String args [])
+        {
+            for (char i = 'a';i <= 'e'; i++){
+                for (char j = 'a';j <= i; j++){
+
+                    System.out.print(i + " ");
+                }
+                System.out.println();
+            }
+        }
+}
+
+//pattern 7
+public class DemoIf1{
+
+        public static void main (String args [])
+        {
+
+            for(char i = 'a'; i <='e';i++){
+                for (char j = 'a'; j<='e';j++){
+                    System.out.print(j +" ");   
+                }
+                System.out.println();
+            }
+        }
+}
+
+//pattern 8
+public class DemoIf1{
+    public static void main (String args []){
+
+        for (char i = 'a'; i<='e';i++){
+            for (char j = 'a'; j<=i;j++)
+            {
+                System.out.print(j +" ");
+            }
+            System.out.println();
+        }
     }
 }
