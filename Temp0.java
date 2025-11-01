@@ -62,24 +62,66 @@
  //}
  // 10.
 // a java program  to check if a string contains a specific substring
+//  public class Temp0{
+//      public static void main (String args [])	{
+    
+//         String str = "Hello, welcome to the world of Java programming.";
+//         String substring = "Java";
+//          boolean  containsSubstring = checkSubstring(str , substring);
+            
+//             if(containsSubstring)	{
+            
+//                 System.out.println("The string contains the substring: " + substring);
+//     }	else {
+                
+//                 System.out.println("The string does not contain the substring: " + substring);
+//     }
+//     }
+//      public static boolean checkSubstring(String str, String substring){
+        
+//             return str.contains(substring);
+            
+//     }
+//  }
+
+// 11.
+// a java program to check if a person is eligible for a job based on their age, education, and experience using nested if-else statements
  public class Temp0{
      public static void main (String args [])	{
     
-        String str = "Hello, welcome to the world of Java programming.";
-        String substring = "Java";
-         boolean  containsSubstring = checkSubstring(str , substring);
+        int age = 30;
+        String education = "Bachelor's Degree";
+        int experience = 5;
+         boolean  isEligible = checkEligibility(age , education, experience);
             
-            if(containsSubstring)	{
+            if(isEligible)	{
             
-                System.out.println("The string contains the substring: " + substring);
+                System.out.println("You are eligible for the job.");
     }	else {
                 
-                System.out.println("The string does not contain the substring: " + substring);
+                System.out.println("You are not eligible for the job.");
     }
     }
-     public static boolean checkSubstring(String str, String substring){
+     public static boolean checkEligibility(int age, String education, int experience){
         
-            return str.contains(substring);
+            if(age >= 21 && age <= 60)	{
             
+                if(education.equals("Bachelor's Degree") || education.equals("Master's Degree"))	{
+                
+                    if(experience >= 2)	{
+                    
+                        return true;
+        }	else {
+                        
+                        return false;
+        }
+    }	else {
+                    
+                    return false;
+    }
+}	else {
+                
+                return false;
+    }
     }
  }
