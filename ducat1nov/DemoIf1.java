@@ -47,16 +47,54 @@
 //  }
 
 //pattern 3
-public class DemoIf1 {
+// public class DemoIf1 {
 
-        public static void main(String[] args) {
-            for (int i =0;i<=5;i++) {
+//         public static void main(String[] args) {
+//             for (int i =0;i<=5;i++) {
 
-                for (int j = 1; j <= i; j++) {
+//                 for (int j = 1; j <= i; j++) {
 
-                    System.out.print(j + " ");
+//                     System.out.print(j + " ");
+//                 }
+//                 System.out.println();
+//             }
+//         }
+// }
+
+/*
+ A 
+ B B
+C C C
+D D D D
+E E E E E
+ */
+// public class DemoIf1 {
+
+//         public static void main (String args [])    {
+
+//                 for (int i =65; i <=69; i++){
+
+//                     for (int j =65; j <=i; j++){
+
+//                         System.out.print((char)i +" ");
+
+//                     }
+//                     System.out.println();
+//                 }
+//         }
+// }
+
+public class DemoIf1
+{
+    public static void main (String args []){
+
+            for (int i =65; i<=69;i++){
+
+                for (int j = 65;i >= j;j++){
+
+                    System.out.print((char)j +" ");
                 }
                 System.out.println();
             }
-        }
+    }
 }
