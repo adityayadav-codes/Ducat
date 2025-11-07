@@ -99,14 +99,41 @@
 //             System.out.println();
 //          }
 //     }
-// }
-public class Temp0{
-  public  static int sum(int a, int b){
-        int sum = a + b;
-        return sum;
-    }
-    public static void main(String[] args) {
+// // }
+// public class Temp0{
+//   public  static int sum(int a, int b){
+//         int sum = a + b;
+//         return sum;
+//     }
+//     public static void main(String[] args) {
        
-        System.err.println(sum(10, 20));
+//         System.err.println(sum(10, 20));
+//     }
+// }
+public class Temp0 {
+
+    public static void main(String[] args) {
+
+        int a = 10;
+        int b = 20;
+
+        int choice = 2;
+         {
+            switch (choice) {
+                case 1:
+                     {
+                        System.out.println(a+b);
+                    }
+                    break;
+                    case 2:
+                    {
+                        System.out.println(b - a);
+                    }
+                   
+            
+                default:
+                    break;
+            }
+        } 
     }
 }
