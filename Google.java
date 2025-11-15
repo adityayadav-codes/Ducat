@@ -1,28 +1,77 @@
-public class Google{
+// public class Google{
+//     int id;
+//     String name;
+//     int salary;
+//     String cName;
+//     void store (int id1, String name1, int salary1, String cName1) {
+
+//         id = id1;
+//         name = name1;
+//         salary = salary1;
+//         cName = cName1;
+//     }
+//     void show(){
+//         System.out.print("=====================");
+//         System.out.println();
+//         System.out.println(id);
+//         System.out.println(name);
+//         System.out.println(salary);
+//         System.out.println(cName);
+        
+//     }
+//     public static void main(String[] args) {
+//         Google emp1 = new Google();
+//         emp1.store(101, "Aditya", 1212,"Infoys");
+//         emp1.show();
+//         //employee 2:
+//         Google emp2 = new Google();
+//         emp2.store(102, "Akash",2323,"Infpsys");
+//         emp2.show();
+//         Google emp3 = new Google();
+//         emp3.store(103, "ANIL", 2322, "Infosys");
+//         emp3.show();
+//     }
+// }
+
+//static data member
+
+public  class Google{
+
     int id;
     String name;
     int salary;
-    String cName;
-    void store (int id1, String name1, int salary1, String cName1) {
+    static String cName = "Google";
 
-        id = id1;
-        name = name1;
-        salary = salary1;
-        cName = cName1;
-    }
-    void show(){
-        System.out.println(id);
-        System.out.println(name);
-        System.out.println(salary);
-        System.out.println(cName);
-    }
-    public static void main(String[] args) {
-        Google emp1 = new Google();
-        emp1.store(101, "Aditya", 1212,"Infoys");
-        emp1.show();
-        //employee 2:
-        Google emp2 = new Google();
-        emp2.store(102, "Akash",2323,"Infpsys");
-        emp2.show();
+        void store(int id1, String name1, int salary1) {
+
+            id = id1;
+            name = name1;
+            salary = salary1;
+        }
+        //consoole
+        void show() {
+            System.out.println("=============================");
+            System.out.println("ID              : "+id);
+            System.out.println("Name            : "+name);
+            System.out.println("Salalry         : "+salary);
+            System.out.println("Company Name    : "+cName);
+
+        }
+    public static void main(String args []) {
+
+            // Employee 1:
+            Google emp1 = new Google();
+            emp1.store(101, "Aadi", 23232);
+            emp1.show();
+
+            //Employee 2:
+            Google emp2 = new Google();
+            emp2.store(102, "Akki", 4342);
+            emp2.show();
+
+            //Employee 3:
+            Google emp3 = new Google();
+            emp3.store(103, "Anil", 5433);
+            emp3.show();
     }
 }
