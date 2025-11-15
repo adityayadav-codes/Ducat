@@ -78,38 +78,38 @@ public  class Google{
 
 
 // Data Shadowing
-// public  class Google {
-//         int id ;
-//         String name;
-//         int salary;
-//         static String cName = "Google";
-//         void store(int id, String name, int salary,Google emp){
-//             emp.id = id;
-//             emp.name = name;
-//             emp.salary = salary;
-//         }
-//         void show() {
-//             System.out.println("==============================");
-//             System.out.println("ID              : "+id);
-//             System.out.println("Name            : "+name);
-//             System.out.println("Salary          : "+salary);
-//             System.out.println("Company Name    : "+cName);
-//         }
-//         public static void main(String args []) {
-//             //Employee 1:
-//             Google emp1 = new Google();
-//             emp1.store(101,"Aadi",23232,emp1);
-//             emp1.show();
-//             //Employee 2:
-//             Google emp2 = new Google();
-//             emp2.store(102,"Akki",3232,emp2);
-//             emp2.show();
-//             //Employee 3:
-//             Google emp3 = new Google();
-//             emp3.store(103,"Anil",5433,emp3);
-//             emp3.show();
-//         }
-//     }
+public  class Google {
+        int id ;
+        String name;
+        int salary;
+        static String cName = "Google";
+        void store(int id, String name, int salary,Google emp){
+            emp.id = id;
+            emp.name = name;
+            emp.salary = salary;
+        }
+        void show() {
+            System.out.println("==============================");
+            System.out.println("ID              : "+id);
+            System.out.println("Name            : "+name);
+            System.out.println("Salary          : "+salary);
+            System.out.println("Company Name    : "+cName);
+        }
+        public static void main(String args []) {
+            //Employee 1:
+            Google emp1 = new Google();
+            emp1.store(101,"Aadi",23232,emp1);
+            emp1.show();
+            //Employee 2:
+            Google emp2 = new Google();
+            emp2.store(102,"Akki",3232,emp2);
+            emp2.show();
+            //Employee 3:
+            Google emp3 = new Google();
+            emp3.store(103,"Anil",5433,emp3);
+            emp3.show();
+        }›
+    }
 
 //this Keyword
     public  class Google {
