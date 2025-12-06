@@ -153,7 +153,7 @@ public class Google {
     static String cName = "Google";
 
     //Parameterized Constructor
-   Google(int id, Stirng name, int salary )v {
+   Google(int id, String name, int salary ) {
     this.id = id;
     this.name = name;
     this.salary = salary;
@@ -171,5 +171,6 @@ public class Google {
         emp1.show();
         //Employee 2:
         Google emp2 = new Google(230715,"Akash Yadav",32325);
+        emp2.show();
     }
 }
