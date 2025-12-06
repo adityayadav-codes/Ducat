@@ -14,9 +14,25 @@
 // }
 
 // local Level Variable
+// public class DataType{
+//     public static void main(String[] args) {
+//         int x ;
+//         System.out.println(x);
+//     }
+// }
+
+// implicit Type Casting
 public class DataType{
+    static void show(byte b){ 
+        System.out.println("Byte Value : "+b);
+    }
+    static void show(short s){ 
+        System.out.println("Short Value : "+s);
+    }
+    static void show(int i){ 
+        System.out.println("Int Value : "+i);
+    }
     public static void main(String[] args) {
-        int x ;
-        System.out.println(x);
+        show(10);
     }
 }
