@@ -5,10 +5,10 @@ public class Demo {
 			
 		if(num >=0) {
 		
-			System.out.println("Positive number");
+			System.out.println("Positive number!!");
 		}
 		else {
-			System.out.println("Negative number");
+			System.out.println("Negative number!!");
 		}
 	}
 }
