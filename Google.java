@@ -145,32 +145,67 @@
 //             }
 //         }
 
-//Parameterized Constructor
-public class Google {
-    int id;
-    String name;
-    int salary;
-    static String cName = "Google";
+// //Parameterized Constructor
+// public class Google {
+//     int id;
+//     String name;
+//     int salary;
+//     static String cName = "Google";
 
-    //Parameterized Constructor
-   Google(int id, String name, int salary ) {
-    this.id = id;
-    this.name = name;
-    this.salary = salary;
-   }
-   void show() {
-    System.out.println("===============================");
-    System.out.println("ID              : "+id);
-    System.out.println("Name            : "+name);
-    System.out.println("Salary          : "+salary);
-    System.out.println("Company Name    : "+cName);
-   }
-    public static void main(String args []) {
-        //Employee 1:
-        Google emp1 = new Google(230714,"Aditya Yadav",23231);
-        emp1.show();
-        //Employee 2:
-        Google emp2 = new Google(230715,"Akash Yadav",32325);
-        emp2.show();
-    }
+//     //Parameterized Constructor
+//    Google(int id, String name, int salary ) {
+//     this.id = id;
+//     this.name = name;
+//     this.salary = salary;
+//    }
+//    void show() {
+//     System.out.println("===============================");
+//     System.out.println("ID              : "+id);
+//     System.out.println("Name            : "+name);
+//     System.out.println("Salary          : "+salary);
+//     System.out.println("Company Name    : "+cName);
+//    }
+//     public static void main(String args []) {
+//         //Employee 1:
+//         Google emp1 = new Google(230714,"Aditya Yadav",23231);
+//         emp1.show();
+//         //Employee 2:
+//         Google emp2 = new Google(230715,"Akash Yadav",32325);
+//         emp2.show();
+//     }
+// }
+
+// init block, static block, constructor, normal method
+public class Google {
+	static {
+		
+		System.out.println("Static Block");
+	}
+	// init block 
+	{
+		System.out.println("Init Block");
+	}
+	// default constructor
+	Google() {
+		System.out.println("Default Constructor");
+	}
+	Google(int x) {
+		System.out.println(x);
+	}
+	Google(int x , int y) {
+		System.out.println(x + y);
+	}
+	Google(int x, int y, int z) {
+		System.out.println(x + y + z);
+	}
+	// normal method
+	void Google() {
+		System.out.println("Normal Method");
+	}
+	public static void main(String [] args) {
+		new Google();
+		new Google(10);
+		new Google(10,30);
+		new Google(10,40,60).Google();
+	}
 }
