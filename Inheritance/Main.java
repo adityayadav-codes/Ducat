@@ -82,16 +82,32 @@
 //     }
 // }
 
-// with a class
+// // with a class
+// public class Main {
+
+//   static  void show(){
+//         System.out.println("method calling inside another method");
+//     }
+//    static void show2() {
+//         show();
+//     }
+//     public static void main(String [] args) {
+//         Main.show();
+//     }
+// }
+
+// 4. Method calling in Another class
+
+class Temp {
+
+    void show(){
+        System.out.println("method calling in another class");
+    }
+}
 public class Main {
 
-  static  void show(){
-        System.out.println("method calling inside another method");
-    }
-   static void show2() {
-        show();
-    }
-    public static void main(String [] args) {
-        Main.show();
-    }
+        public static void main(String[] args) {
+        Temp obj = new Temp();
+        obj.show();
+        }
 }
