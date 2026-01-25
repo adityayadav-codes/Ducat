@@ -67,6 +67,7 @@
 // }
 
 // 3 method :- nethod calling inside another method
+    // with  an object:
 
 public class Main {
     void show () {
