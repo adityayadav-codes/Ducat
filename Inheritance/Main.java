@@ -40,7 +40,7 @@
 
 // ============ Method Calling ==========================
 
-// 1 method:-
+// 1 method:- instance methd calling
 
 //  public class Main {
  
@@ -54,14 +54,29 @@
 //     }
 //  }
 
-// 2 method :-
+// 2 method :- static method calling
+
+// public class Main {
+
+//      static void show () {
+//         System.out.println("static method calling ");
+//      }
+//      public static void main(String [] args) {
+//         Main.show();
+//      }
+// }
+
+// 3 method :- nethod calling inside another method
 
 public class Main {
-
-     static void show () {
-        System.out.println("static method calling ");
-     }
-     public static void main(String [] args) {
-        Main.show();
-     }
+    void show () {
+        System.out.println("show method calling");
+    }
+    void show2 () {
+        show();
+    }
+    public static void main(String[] args) {
+        Main obj = new Main();
+        obj.show2();
+    }
 }
