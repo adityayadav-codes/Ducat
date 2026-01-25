@@ -1,117 +1,117 @@
-// class A {
-//     void parent(){
-//         System.out.println("Parennt Class!");
-//     }
-// }
-// class B  extends A{
-//     void child() {
-//         System.out.println("Child Class!");
-//     }
-// }
-// public class Main {
-//     public static void main(String[] args) {
-//         B b1 = new B();
-//         b1.child();
-//         b1.parent();
-//     }
+class A {
+    void parent(){
+        System.out.println("Parennt Class!");
+    }
+}
+class B  extends A{
+    void child() {
+        System.out.println("Child Class!");
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        B b1 = new B();
+        b1.child();
+        b1.parent();
+    }
     
-// }
+}
 
 
-//  Single Inheritance===============
+ //Single Inheritance===============
  
-// class ParentClass {
-//     void parent() {
-//         System.out.println("Parent Class!!!");
-//     }
-// }
-// class childClass extends ParentClass {
-//     void child() {
-//         System.out.println("Child Class");
-//     }
-// }
-// public class Main {
-//     public static void main(String [] args) {
-//         childClass c1 = new childClass();
-//         c1.child();
-//         c1.parent();
-//     }
-// }
+class ParentClass {
+    void parent() {
+        System.out.println("Parent Class!!!");
+    }
+}
+class childClass extends ParentClass {
+    void child() {
+        System.out.println("Child Class");
+    }
+}
+public class Main {
+    public static void main(String [] args) {
+        childClass c1 = new childClass();
+        c1.child();
+        c1.parent();
+    }
+}
 
-// ============ Method Calling ==========================
+//============ Method Calling ==========================
 
-// 1 method:- instance methd calling
+1// method:- instance methd calling
 
-//  public class Main {
+ public class Main {
  
-//     void show() {
-//         System.out.println("show method");
-//     }
+    void show() {
+        System.out.println("show method");
+    }
 
-//     public static void main(String[] args) {
-//         Main obj = new Main();
-//         obj.show();
-//     }
-//  }
+    public static void main(String[] args) {
+        Main obj = new Main();
+        obj.show();
+    }
+ }
 
-// 2 method :- static method calling
+//2 method :- static method calling
 
-// public class Main {
+public class Main {
 
-//      static void show () {
-//         System.out.println("static method calling ");
-//      }
-//      public static void main(String [] args) {
-//         Main.show();
-//      }
-// }
+     static void show () {
+        System.out.println("static method calling ");
+     }
+     public static void main(String [] args) {
+        Main.show();
+     }
+}
 
-// 3 method :- nethod calling inside another method
-    // with  an object:
+//3 method :- nethod calling inside another method
+   // with  an object:
 
-// public class Main {
-//     void show () {
-//         System.out.println("show method calling");
-//     }
-//     void show2 () {
-//         show();
-//     }
-//     public static void main(String[] args) {
-//         Main obj = new Main();
-//         obj.show2();
-//     }
-// }
+public class Main {
+    void show () {
+        System.out.println("show method calling");
+    }
+    void show2 () {
+        show();
+    }
+    public static void main(String[] args) {
+        Main obj = new Main();
+        obj.show2();
+    }
+}
 
-// // with a class
-// public class Main {
+// with a class
+public class Main {
 
-//   static  void show(){
-//         System.out.println("method calling inside another method");
-//     }
-//    static void show2() {
-//         show();
-//     }
-//     public static void main(String [] args) {
-//         Main.show();
-//     }
-// }
+  static  void show(){
+        System.out.println("method calling inside another method");
+    }
+   static void show2() {
+        show();
+    }
+    public static void main(String [] args) {
+        Main.show();
+    }
+}
 
-// 4. Method calling in Another class
+//4. Method calling in Another class
 
-// class Temp {
+class Temp {
 
-//     void show(){
-//         System.out.println("method calling in another class");
-//     }
-// }
-// public class Main {
+    void show(){
+        System.out.println("method calling in another class");
+    }
+}
+public class Main {
 
-//         public static void main(String[] args) {
-//         Temp obj = new Temp();
-//         obj.show();
-//         }
-// }
-// 5. Method calling in Inheritance
+        public static void main(String[] args) {
+        Temp obj = new Temp();
+        obj.show();
+        }
+}
+//5. Method calling in Inheritance
 
 class Parent {
     void show() {
