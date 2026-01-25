@@ -98,16 +98,34 @@
 
 // 4. Method calling in Another class
 
-class Temp {
+// class Temp {
 
-    void show(){
-        System.out.println("method calling in another class");
+//     void show(){
+//         System.out.println("method calling in another class");
+//     }
+// }
+// public class Main {
+
+//         public static void main(String[] args) {
+//         Temp obj = new Temp();
+//         obj.show();
+//         }
+// }
+// 5. Method calling in Inheritance
+
+class Parent {
+    void show() {
+        System.out.println("Method calling in Inheritance");
+    }
+}
+class child extends Parent {
+    void show2(){
+        show();
     }
 }
 public class Main {
-
-        public static void main(String[] args) {
-        Temp obj = new Temp();
-        obj.show();
-        }
+    public static void main(String[] args) {
+        child obj = new child();
+     obj.show2();
+    }
 }
