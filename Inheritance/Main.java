@@ -69,15 +69,29 @@
 // 3 method :- nethod calling inside another method
     // with  an object:
 
+// public class Main {
+//     void show () {
+//         System.out.println("show method calling");
+//     }
+//     void show2 () {
+//         show();
+//     }
+//     public static void main(String[] args) {
+//         Main obj = new Main();
+//         obj.show2();
+//     }
+// }
+
+// with a class
 public class Main {
-    void show () {
-        System.out.println("show method calling");
+
+  static  void show(){
+        System.out.println("method calling inside another method");
     }
-    void show2 () {
+   static void show2() {
         show();
     }
-    public static void main(String[] args) {
-        Main obj = new Main();
-        obj.show2();
+    public static void main(String [] args) {
+        Main.show();
     }
 }
