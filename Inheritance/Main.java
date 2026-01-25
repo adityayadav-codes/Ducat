@@ -20,20 +20,33 @@
 
 //  Single Inheritance===============
  
-class ParentClass {
-    void parent() {
-        System.out.println("Parent Class!!!");
+// class ParentClass {
+//     void parent() {
+//         System.out.println("Parent Class!!!");
+//     }
+// }
+// class childClass extends ParentClass {
+//     void child() {
+//         System.out.println("Child Class");
+//     }
+// }
+// public class Main {
+//     public static void main(String [] args) {
+//         childClass c1 = new childClass();
+//         c1.child();
+//         c1.parent();
+//     }
+// }
+
+// ============ Method Calling ==========================
+ public class Main {
+ 
+    void show() {
+        System.out.println("show method");
     }
-}
-class childClass extends ParentClass {
-    void child() {
-        System.out.println("Child Class");
+
+    public static void main(String[] args) {
+        Main obj = new Main();
+        obj.show();
     }
-}
-public class Main {
-    public static void main(String [] args) {
-        childClass c1 = new childClass();
-        c1.child();
-        c1.parent();
-    }
-}
+ }
