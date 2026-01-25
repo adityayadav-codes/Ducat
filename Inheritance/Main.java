@@ -39,14 +39,29 @@
 // }
 
 // ============ Method Calling ==========================
- public class Main {
- 
-    void show() {
-        System.out.println("show method");
-    }
 
-    public static void main(String[] args) {
-        Main obj = new Main();
-        obj.show();
-    }
- }
+// 1 method:-
+
+//  public class Main {
+ 
+//     void show() {
+//         System.out.println("show method");
+//     }
+
+//     public static void main(String[] args) {
+//         Main obj = new Main();
+//         obj.show();
+//     }
+//  }
+
+// 2 method :-
+
+public class Main {
+
+     static void show () {
+        System.out.println("static method calling ");
+     }
+     public static void main(String [] args) {
+        Main.show();
+     }
+}
