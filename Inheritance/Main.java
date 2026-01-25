@@ -1,18 +1,39 @@
-class A {
-    void parent(){
-        System.out.println("Parennt Class!");
+// class A {
+//     void parent(){
+//         System.out.println("Parennt Class!");
+//     }
+// }
+// class B  extends A{
+//     void child() {
+//         System.out.println("Child Class!");
+//     }
+// }
+// public class Main {
+//     public static void main(String[] args) {
+//         B b1 = new B();
+//         b1.child();
+//         b1.parent();
+//     }
+    
+// }
+
+
+//  Single Inheritance===============
+ 
+class ParentClass {
+    void parent() {
+        System.out.println("Parent Class!!!");
     }
 }
-class B  extends A{
+class childClass extends ParentClass {
     void child() {
-        System.out.println("Child Class!");
+        System.out.println("Child Class");
     }
 }
 public class Main {
-    public static void main(String[] args) {
-        B b1 = new B();
-        b1.child();
-        b1.parent();
+    public static void main(String [] args) {
+        childClass c1 = new childClass();
+        c1.child();
+        c1.parent();
     }
-    
 }
