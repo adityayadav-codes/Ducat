@@ -2,7 +2,7 @@ class Parent {
     int x;
     int y;
 
-        void show() {
+        void calculate() {
             System.out.println("x =  "+x  + " "+ "y =  "+y);
             System.out.println("Addition : "+(x+y));
             System.out.println("Product  : "+(x*y));
@@ -14,7 +14,7 @@ class Child extends Parent {
         y = 20;
     }
     void getData(){
-        show();
+        calculate();
     }
 }
 public class Demo {
@@ -23,11 +23,6 @@ public class Demo {
 
         Child obj = new Child();
         obj.setData();
-
-
-
-
-
         obj.getData();
     }
 }    
