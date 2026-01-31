@@ -25,5 +25,8 @@ public class Calculator {
     void area(int side) { // Area of square
         System.out.println("Area of square = "+(side * side));
     }
+    void area(int lengh, int breadth) { // Area of rectangle
+        System.out.println("Area of Rectangle = "+(lengh * breadth));
+    }
    
 }
