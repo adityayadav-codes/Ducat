@@ -22,7 +22,7 @@
 
 public class Calculator {
 
-    static pi = 3.14;
+    static  float pi  = 3.14;
     void area(int side) { // Area of square
         System.out.println("Area of square = "+(side * side));
     }
