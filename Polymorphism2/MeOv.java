@@ -20,9 +20,9 @@
 
 // Example 2 :
 
-public class Calculator {
+public class MeOv {
 
-    static  float pi  = 3.14;
+    static  double pi  = 3.14;
     void area(int side) { // Area of square
         System.out.println("Area of square = "+(side * side));
     }
@@ -33,7 +33,7 @@ public class Calculator {
         System.out.println("Area of circle = "+(2 * pi * radius));
     }
    public static void main(String[] args) {
-    Calculator c1 = new Calculator();
+    MeOv c1 = new MeOv();
     c1.area(20);
     c1.area(10, 20);
     c1.area(10.2);
