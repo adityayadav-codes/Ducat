@@ -44,5 +44,11 @@
 // Example 3 :
 public class MeOv { // Bank class
 
-    
-}
+    private double balance;
+    // deposit block
+    void deposit(int amount) { // method 1:
+        balance += amount;
+        System.out.println("Deposited: "+amount);
+
+    } 
+   
