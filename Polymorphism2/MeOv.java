@@ -55,10 +55,19 @@ public class MeOv { // Bank class
         balance +=amount;
         System.out.println("Deposited: "+amount);
     }
-    void deposit(String description, double amount) {
+    void deposit(String description, double amount) { // method 3:
         balance += amount;
         System.out.println("Deposited: "+ amount + " for "+description);
     }
-
+    void balance() {
+        System.out.println("Balance: "+balance);
+    }
+    public static void main(String[] args) {
+        MeOv acc = new MeOv();
+        acc.deposit(1000);
+        acc.deposit(500.50);
+        acc.deposit("salary",25000);
+        acc.balance();
+    }
 }
    
