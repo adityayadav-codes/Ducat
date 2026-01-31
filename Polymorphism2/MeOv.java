@@ -47,8 +47,14 @@ public class MeOv { // Bank class
     private double balance;
     // deposit block
     void deposit(int amount) { // method 1:
+       
         balance += amount;
         System.out.println("Deposited: "+amount);
-
     } 
+    void deposit(double amount){ // method 2:
+        balance +=amount;
+        System.out.println("Deposited: "+amount);
+    }
+    
+}
    
