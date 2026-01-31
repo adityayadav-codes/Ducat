@@ -20,23 +20,29 @@
 
 // Example 2 :
 
-public class MeOv {
+// public class MeOv {
 
-    static  double pi  = 3.14;
-    void area(int side) { // Area of square
-        System.out.println("Area of square = "+(side * side));
-    }
-    void area(int lengh, int breadth) { // Area of rectangle
-        System.out.println("Area of Rectangle = "+(lengh * breadth));
-    }
-    void area(double radius) { // Area of circle 
-        System.out.println("Area of circle = "+(2 * pi * radius));
-    }
-   public static void main(String[] args) {
-    MeOv c1 = new MeOv();
-    c1.area(20);
-    c1.area(10, 20);
-    c1.area(10.2);
-   }
+//     static  double pi  = 3.14;
+//     void area(int side) { // Area of square
+//         System.out.println("Area of square = "+(side * side));
+//     }
+//     void area(int lengh, int breadth) { // Area of rectangle
+//         System.out.println("Area of Rectangle = "+(lengh * breadth));
+//     }
+//     void area(double radius) { // Area of circle 
+//         System.out.println("Area of circle = "+(2 * pi * radius));
+//     }
+//    public static void main(String[] args) {
+//     MeOv c1 = new MeOv();
+//     c1.area(20);
+//     c1.area(10, 20);
+//     c1.area(10.2);
+//    }
+    
+// }
+
+// Example 3 :
+public class MeOv { // Bank class
+
     
 }
