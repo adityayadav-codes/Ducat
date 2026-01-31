@@ -22,11 +22,15 @@
 
 public class Calculator {
 
+        static pi = 3.14;
     void area(int side) { // Area of square
         System.out.println("Area of square = "+(side * side));
     }
     void area(int lengh, int breadth) { // Area of rectangle
         System.out.println("Area of Rectangle = "+(lengh * breadth));
+    }
+    void area(double radius) { // Area of circle 
+        System.out.println("Area of circle = "+(2 * pi * radius));
     }
    
 }
