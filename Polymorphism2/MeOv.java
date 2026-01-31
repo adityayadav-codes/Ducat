@@ -22,7 +22,7 @@
 
 public class Calculator {
 
-        static pi = 3.14;
+    static pi = 3.14;
     void area(int side) { // Area of square
         System.out.println("Area of square = "+(side * side));
     }
@@ -32,5 +32,11 @@ public class Calculator {
     void area(double radius) { // Area of circle 
         System.out.println("Area of circle = "+(2 * pi * radius));
     }
-   
+   public static void main(String[] args) {
+    Calculator c1 = new Calculator();
+    c1.area(20);
+    c1.area(10, 20);
+    c1.area(10.2);
+   }
+    
 }
