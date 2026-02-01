@@ -42,16 +42,42 @@
 
 
 // ======================Stronger to Weaker (Access Specifier)===============
-class Base {
-   protected void show() {
-        System.out.println("show from Base class");
-    }
-}
-public class Child  extends Base{
+// class Base {
+//    protected void show() {
+//         System.out.println("show from Base class");
+//     }
+// }
+// public class Child  extends Base{
 
-  public void show () {
-        System.out.println("show from child class");
-        super.show();
+//   public void show () {
+//         System.out.println("show from child class");
+//         super.show();
+//     }
+
+//     public static void main(String [] args) {
+
+//         Child c1 = new Child();
+//         c1.show();
+//     }
+    
+    
+// }
+
+
+// Access Modifier :-
+
+class Base {
+
+        static void show() {
+            System.out.println("show from Base clss");
+        }
+
+}
+public class Child extends Base{
+
+    static void show() {
+        System.out.println("show from Child class");
+   
     }
 
     public static void main(String [] args) {
@@ -59,6 +85,4 @@ public class Child  extends Base{
         Child c1 = new Child();
         c1.show();
     }
-    
-    
 }
