@@ -43,13 +43,13 @@
 
 // ======================Stronger to Weaker (Access Specifier)===============
 class Base {
-    public void show() {
+    void show() {
         System.out.println("show from Base class");
     }
 }
 public class Child  extends Base{
 
-   public void show () {
+   protected void show () {
         System.out.println("show from child class");
         super.show();
     }
