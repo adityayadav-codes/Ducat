@@ -90,22 +90,42 @@
 
 // upcasting & downcasting
 
+// class Base {
+//     void show() {
+//         System.out.println("show from base class");
+//     }
+// }
+// class Child extends Base {
+
+//     void show() {
+//         System.out.println("show from child class");
+//     }
+//     void display() {
+//         System.out.println("Display from child class");
+//     }
+
+//     public static void main(String[] args) {
+//         Base c1 = new Child(); // upcasting
+//         c1.show();
+//     }
+// }
+
 class Base {
     void show() {
-        System.out.println("show from base class");
+        System.out.println("Show from Base class");
     }
 }
-class Child extends Base {
-
+public class Child extends Base {
     void show() {
-        System.out.println("show from child class");
+        System.out.println("show form Child class");
     }
     void display() {
-        System.out.println("Display from child class");
+       System.out.println("display from child clas");
     }
-
     public static void main(String[] args) {
-        Base c1 = new Child(); // upcasting
-        c1.show();
+         Base c1 = new Child();
+         c1.show();
+         Child c2 = (Child)c1;// downcasting
+         c2.display();
     }
 }
