@@ -49,7 +49,7 @@ class Base {
 }
 public class Child  extends Base{
 
-    void show () {
+   public void show () {
         System.out.println("show from child class");
         super.show();
     }
