@@ -66,23 +66,46 @@
 
 // Access Modifier :-
 
-class Base {
+// class Base {
 
-        static void show() {
-            System.out.println("show from Base clss");
-        }
+//         static void show() {
+//             System.out.println("show from Base clss");
+//         }
 
-}
-public class Child extends Base{
+// }
+// public class Child extends Base{
 
-    static void show() {
-        System.out.println("show from Child class");
+//     static void show() {
+//         System.out.println("show from Child class");
    
+//     }
+
+//     public static void main(String [] args) {
+
+//         Child c1 = new Child();
+//         c1.show();
+//     }
+// }
+
+
+// upcasting & downcasting
+
+class Base {
+    void show() {
+        System.out.println("show from base class");
+    }
+}
+class Child extends Base {
+
+    void show() {
+        System.out.println("show from child class");
+    }
+    void display() {
+        System.out.println("Display from child class");
     }
 
-    public static void main(String [] args) {
-
-        Child c1 = new Child();
+    public static void main(String[] args) {
+        Base c1 = new Child(); // upcasting
         c1.show();
     }
 }
