@@ -30,6 +30,7 @@ public class Child extends Base{
     int x = 20;
      void show() {
         System.out.println("x : "+x);
+        System.out.println("x : "+(this.x));
 
      }
 
