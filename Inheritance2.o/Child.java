@@ -20,22 +20,45 @@
 //      }
 // }
 
-// super Keyworkd:
+// // super Keyworkd:
+// class Base {
+
+//      int x = 10;
+// }
+// public class Child extends Base{
+
+//     int x = 20;
+//      void show() {
+//         System.out.println("x : "+x);
+//         System.out.println("x : "+(this.x));
+
+//      }
+
+//      public static void main(String[] args) {
+//         Child c1 = new Child();
+//         c1.show();
+//      }
+// }
+
+
+// ======================Stronger to Weaker (Access Specifier)===============
 class Base {
-
-     int x = 10;
+    public void show() {
+        System.out.println("show from Base class");
+    }
 }
-public class Child extends Base{
+public class Child  extends Base{
 
-    int x = 20;
-     void show() {
-        System.out.println("x : "+x);
-        System.out.println("x : "+(this.x));
+    void show () {
+        System.out.println("show from child class");
+        super.show();
+    }
 
-     }
+    public static void main(String [] args) {
 
-     public static void main(String[] args) {
         Child c1 = new Child();
         c1.show();
-     }
+    }
+    
+    
 }
