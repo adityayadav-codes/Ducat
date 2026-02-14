@@ -3,6 +3,16 @@ abstract class Bank {
     abstract void deposit();
    abstract void withdraw();
 }
+class SavingAccount extends Bank {
+    @Override
+        public void deposit(){
+            System.out.println("Depositing Amount in Saving Accounts");    
+    }
+    @Override
+        public void withdraw(){
+            System.out.println("Withdraw Amount from Savings Account");
+    }   
+}
 public class MainBank {
         public static void main (String args [] ) {
             Bank bank1 = new SavingAccout();
