@@ -70,4 +70,4 @@ public class MeOv { // Bank class
         acc.balance();
     }
 }
-   
+// Example 3
