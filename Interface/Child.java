@@ -9,19 +9,34 @@
 //     }
 // }
 
-// Non - static method in interface
-interface My {
-    default void show() {
-        System.out.println("Show from interface My");
-    }
-}
-public  class Child implements My {
-    public void show() {
-        System.out.println("Show from child class");
-    }
-    public static void main(String [] args) {
+// // Non - static method in interface
+// interface My {
+//     default void show() {
+//         System.out.println("Show from interface My");
+//     }
+// }
+// public  class Child implements My {
+//     public void show() {
+//         System.out.println("Show from child class");
+//     }
+//     public static void main(String [] args) {
         
+//         Child c1 = new Child();
+//         c1.show();
+//     }
+// } 
+
+// Default Mehtod in interface
+interface My {
+    void show();
+}
+class Child implements My {
+    public void show() {
+        System.out.println("show from child ");
+    }
+
+    public static void main(String [] args) {
         Child c1 = new Child();
         c1.show();
     }
-} 
+}
