@@ -26,7 +26,7 @@
 //     }
 // } 
 
-// Default Mehtod in interface
+// //Default Mehtod in interface
 // interface My {
 //     void show();
 // }
@@ -41,7 +41,7 @@
 //     }
 // }
 
-// Multiple Inheritance via Interface
+// //Multiple Inheritance via Interface
 
 // interface My {
 //     void show();
@@ -60,7 +60,7 @@
 // }
 
 
-//  Data Member in Inheritance
+// Data Member in Inheritance
 
 interface My {
     int x = 10;
@@ -69,6 +69,6 @@ public class Child implements My {
     public static void main(String [] args) {
 
         System.out.println(x);
-        x = x+10;
+       // x = x+10;  by default assign a value to static final variable so doesn't changable
     }
 }
