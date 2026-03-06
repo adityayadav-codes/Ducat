@@ -27,14 +27,32 @@
 // } 
 
 // Default Mehtod in interface
+// interface My {
+//     void show();
+// }
+// class Child implements My {
+//     public void show() {
+//         System.out.println("show from child ");
+//     }
+
+//     public static void main(String [] args) {
+//         Child c1 = new Child();
+//         c1.show();
+//     }
+// }
+
+// Multiple Inheritance via Interface
+
 interface My {
     void show();
 }
-class Child implements My {
+interface Mine {
+    void show();
+}
+public class Child implements My, Mine {
     public void show() {
-        System.out.println("show from child ");
+        System.out.println("show from class Child");
     }
-
     public static void main(String [] args) {
         Child c1 = new Child();
         c1.show();
