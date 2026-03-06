@@ -62,13 +62,13 @@
 
 // Data Member in Inheritance
 
-interface My {
-    int x = 10;
-}
-public class Child implements My {
-    public static void main(String [] args) {
+// interface My {
+//     int x = 10;
+// }
+// public class Child implements My {
+//     public static void main(String [] args) {
 
-        System.out.println(x);
-       // x = x+10;  by default assign a value to static final variable so doesn't changable
-    }
-}
+//         System.out.println(x);
+//        // x = x+10;  by default assign a value to static final variable so doesn't changable
+//     }
+// }
