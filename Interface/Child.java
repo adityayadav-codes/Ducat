@@ -43,18 +43,32 @@
 
 // Multiple Inheritance via Interface
 
+// interface My {
+//     void show();
+// }
+// interface Mine {
+//     void show();
+// }
+// public class Child implements My, Mine {
+//     public void show() {
+//         System.out.println("show from class Child");
+//     }
+//     public static void main(String [] args) {
+//         Child c1 = new Child();
+//         c1.show();
+//     }
+// }
+
+
+//  Data Member in Inheritance
+
 interface My {
-    void show();
+    int x = 10;
 }
-interface Mine {
-    void show();
-}
-public class Child implements My, Mine {
-    public void show() {
-        System.out.println("show from class Child");
-    }
+public class Child implements My {
     public static void main(String [] args) {
-        Child c1 = new Child();
-        c1.show();
+
+        System.out.println(x);
+        x = x+10;
     }
 }
