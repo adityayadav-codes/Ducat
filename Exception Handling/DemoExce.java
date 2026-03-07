@@ -1,23 +1,41 @@
-import java.util.Scanner;
-public class DemoExce {
-    public static void main(String [] args) {
+// Arithmetic Exception===========
+// import java.util.Scanner;
+// public class DemoExce {
+//     public static void main(String [] args) {
 
-        Scanner sc = new Scanner(System.in);
+//         Scanner sc = new Scanner(System.in);
+
+//         try {
+
+//             System.out.println("Enter the first number: ");
+//             int a = sc.nextInt();
+            
+//             System.out.println("Enter the second number: ");
+//             int b = sc.nextInt();
+
+//             int result = a/b;
+//             System.out.println("Result : "+result);
+//         }
+//         catch(ArithmeticException e){
+
+//             System.out.println("Cannot divide by zero!");
+//         }
+//     }
+// }
+
+// Array Index out o Bound Exception ===================
+
+public class DemoExce {
+    public static void main(String[] args) {
+        
+        int arr[] = {10,20,30};
 
         try {
-
-            System.out.println("Enter the first number: ");
-            int a = sc.nextInt();
-            
-            System.out.println("Enter the second number: ");
-            int b = sc.nextInt();
-
-            int result = a/b;
-            System.out.println("Result : "+result);
+            System.out.println(arr[6]);
         }
-        catch(ArithmeticException e){
+        catch(ArrayIndexOutOfBoundsException e) {
 
-            System.out.println("Cannot divide by zero!");
+            System.out.println("Array index out of range");
         }
     }
 }
