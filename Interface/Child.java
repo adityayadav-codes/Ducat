@@ -59,7 +59,6 @@ public class Child implements My, Mine {
     }
 }
 
-
 Data Member in Inheritance
 
 interface My {
