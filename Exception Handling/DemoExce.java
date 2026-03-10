@@ -25,17 +25,31 @@ public class DemoExce {
 
 // Array Index out o Bound Exception ===================
 
-public class DemoExce {
-    public static void main(String[] args) {
+// public class DemoExce {
+//     public static void main(String[] args) {
         
-        int arr[] = {10,20,30,40};
+//         int arr[] = {10,20,30,40};
+
+//         try {
+//             System.out.println(arr[8]);
+//         }
+//         catch(ArrayIndexOutOfBoundsException e) {
+
+//             System.out.println("Array index out of range");
+//         }
+//     }
+// }
+
+// Example 2 =======
+public class DemoExce {
+    public static void main(String [] args) {
+        int arr[ ] = {10,30,50,70,};
 
         try {
-            System.out.println(arr[8]);
+            System.out.println(arr[10]) 
         }
-        catch(ArrayIndexOutOfBoundsException e) {
-
-            System.out.println("Array index out of range");
+        catch (ArrayIndexOutOfBoundsException) {
+            System.out.println(Array index out of range)
         }
     }
 }
