@@ -44,27 +44,54 @@
 
 // Armstrong Number==========
 
+// public class DemoArrays {
+
+//     public static void main(String [] args) {
+
+//         int num = 153;
+//         int original = num;
+//         int sum = 0;
+
+//             while (num > 0) {
+                
+//                 int digit = num % 10;
+//                 sum = sum + (digit * digit * digit);
+//                 num = num / 10;
+//             }
+
+//             if(sum == original) {
+
+//                 System.out.println("Armstrong Number");
+//             } else {
+
+//                 System.out.println("Not Armstrong number");
+//             }
+//     }
+// }
+
+
+// Second largest Number
+
 public class DemoArrays {
 
-    public static void main(String [] args) {
+     public static void main(String[] args) {
+        
+        int []arr = {20,10,50,70,40};
+        int largest = arr[0];
+        int secondLargest = arr[0];
 
-        int num = 153;
-        int original = num;
-        int sum = 0;
-
-            while (num > 0) {
+            for(int i =1; i < arr.length; i++) {
                 
-                int digit = num % 10;
-                sum = sum + (digit * digit * digit);
-                num = num / 10;
+                if(arr[i] > largest){
+
+                    secondLargest = largest;
+                    largest = arr[i];
+                }
+                else if(arr[i] > secondLargest && arr[i] != largest) {
+
+                    secondLargest = arr[i];
+                }
             }
-
-            if(sum == original) {
-
-                System.out.println("Armstrong Number");
-            } else {
-
-                System.out.println("Not Armstrong number");
-            }
-    }
+        System.out.println("Second Larged Number: "+secondLargest);
+     }
 }
