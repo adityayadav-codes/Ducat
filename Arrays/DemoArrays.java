@@ -27,17 +27,44 @@
 //             System.out.println();
 //          }
 //     }
+// // }
+// public class DemoArrays {
+
+//     public static void main(String [] args) {
+
+//         int []arr = {1,2,3,4,5};
+
+//         System.out.println("Reverse Number");
+//         for(int i = arr.length-1; i > 0; i--) {
+
+//             System.out.println(arr[i]);
+//         }
+//     }
 // }
+
+// Armstrong Number==========
+
 public class DemoArrays {
 
     public static void main(String [] args) {
 
-        int []arr = {1,2,3,4,5};
+        int num = 153;
+        int original = num;
+        int sum = 0;
 
-        System.out.println("Reverse Number");
-        for(int i = arr.length-1; i > 0; i--) {
+            while (num > 0) {
+                
+                int digit = num % 10;
+                sum = sum + (digit * digit * digit);
+                num = num / 10;
+            }
 
-            System.out.println(arr[i]);
-        }
+            if(sum == original) {
+
+                System.out.println("Armstrong Number");
+            } else {
+
+                System.out.println("Not Armstrong number");
+            }
     }
 }
