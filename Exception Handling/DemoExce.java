@@ -22,7 +22,14 @@ public class DemoExce {
         }
     }
 }
-
+public class Expection {
+    public static void main(String [] args ) {
+        try{
+            int a = 10;
+             int 
+        }
+    }
+}
 //Array Index out o Bound Exception ===================
 
 public class DemoExce {
