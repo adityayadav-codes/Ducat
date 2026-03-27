@@ -10,19 +10,25 @@ class Outerclass {
         System.out.println(id);
     }
 
+    public static void fun2() {
+
+        System.out.println(name);
+        System.out.println(id);
+    }
+
     // innerclasss
 
-    class innerclasss {
+   static class innerclasss {
 
         String str = "Hello";
         static String str2 = "hello2";
 
-        public void m1() {
+        public   void m1() {
 
             System.out.println(name);
             System.out.println(str);
             System.out.println(str2);
-            System.out.println(name);
+            System.out.println(id);
         }
     }
 }
@@ -31,9 +37,9 @@ public class Demo {
 
     public static void main(String[] args) {
         
-        Outerclass outer = new Outerclass();
+        // Outerclass outer = new Outerclass();
 
-        Outerclass.innerclasss inner = outer.new innerclasss();
+        Outerclass.innerclasss inner = new Outerclass.innerclasss();
         inner.m1();
     }
 }
