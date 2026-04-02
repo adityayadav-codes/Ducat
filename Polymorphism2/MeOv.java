@@ -41,6 +41,19 @@ public class MeOv {
     
 }
 
+// Example :===========================
+
+public class MeOv {
+
+    private double salary;
+
+    void getter(int amount) {
+
+        salary = amount;
+        return salary;
+    }
+    public static void main()
+}
 // Example 3 :
 public class MeOv { // Bank class
 
@@ -67,6 +80,7 @@ public class MeOv { // Bank class
         acc.deposit(1000);
         acc.deposit(500.50);
         acc.deposit("salary",25000);
+        
         acc.balance();
     }
 }
