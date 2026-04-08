@@ -31,7 +31,7 @@ public class DemoExce {
         int arr[] = {10,20,30};
 
         try {
-            System.out.println(arr[6]);
+            System.out.println(arr[8]);
         }
         catch(ArrayIndexOutOfBoundsException e) {
 
