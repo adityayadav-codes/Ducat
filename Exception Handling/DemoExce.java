@@ -28,7 +28,7 @@ public class DemoExce {
 public class DemoExce {
     public static void main(String[] args) {
         
-        int arr[] = {10,20,30};
+        int arr[] = {10,20,30,40};
 
         try {
             System.out.println(arr[8]);
